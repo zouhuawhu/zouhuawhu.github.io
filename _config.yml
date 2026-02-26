@@ -12,7 +12,7 @@ author:
   email: zouhua@whu.edu.cn
   links:
     dblp: https://dblp.org/pid/66/3384.html
-    google_scholar: "#"
+    google_scholar: https://scholar.google.com/citations?user=6JMV8NEAAAAJ&hl=zh-CN
     github: https://github.com/zouhuawhu
 
 # 导航栏配置（保留所有项，链接自动生效）
@@ -30,7 +30,7 @@ nav:
 
 # 页脚配置
 footer:
-  update_time: Sept. 04, 2025
+  update_time: Feb. 27, 2026
   page_views: 4,450 Total Pageviews
 
 # 新闻动态（主页用）
