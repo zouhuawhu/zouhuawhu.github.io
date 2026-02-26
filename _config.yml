@@ -1,1 +1,55 @@
+# 站点基础配置
+title: Hua Zou (邹华)
+url: "https://zouhuawhu.github.io"
+description: Researcher at Wuhan University, focusing on Computer Vision and Medical Image Segmentation
 
+# 个人核心信息（后续可直接改这里）
+author:
+  name: Hua Zou (邹华)
+  avatar: https://via.placeholder.com/140  # 替换为你的头像链接
+  resume: "#"  # 替换为你的简历PDF链接
+  interests: Computer Vision, Medical Image Segmentation, Few-shot Detection
+  email: zouhua@whu.edu.cn
+  links:
+    dblp: https://dblp.org/pid/66/3384.html
+    google_scholar: "#"
+    github: https://github.com/zouhuawhu
+
+# 导航栏配置（保留所有项，链接自动生效）
+nav:
+  - name: Home
+    link: "/"
+  - name: Publications
+    link: "/publications.html"
+  - name: Experience
+    link: "/experience.html"
+  - name: Honors
+    link: "#honors"
+  - name: Resources
+    link: "#resources"
+
+# 页脚配置
+footer:
+  update_time: Sept. 04, 2025
+  page_views: 4,450 Total Pageviews
+
+# 新闻动态（主页用）
+news:
+  - date: 2024.11.13
+    content: One paper on Medical Segmentation is accepted to ICASSP 2025.
+  - date: 2024.10.15
+    content: One paper on Medical Segmentation is accepted to BIBM 2024.
+  - date: 2024.06.18
+    content: One paper on Intraocular Lens Power Calculation is accepted to MICCAI 2024.
+  - date: 2023.10.13
+    content: One paper on 3D Medical Segmentation is accepted to BIBM 2023.
+  - date: 2023.06.08
+    content: One paper on Object Detection in UAV Scenes is accepted to Remote Sensing 2023.
+  - date: 2023.11.01
+    content: I've been awarded the Second Prize of Academic Innovation of Wuhan University.
+  - date: 2023.05.25
+    content: One paper on Incomplete Multimodal Learning is accepted to MICCAI 2023.
+  - date: 2022.06.15
+    content: One paper on low light enhancement is accepted to Applied Soft Computing 2022.
+  - date: 2022.06.03
+    content: One paper on Multi-label Retinal Diseases Recognition is accepted to MICCAI 2022. 
