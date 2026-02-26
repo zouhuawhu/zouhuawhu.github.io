@@ -1,0 +1,46 @@
+---
+# 声明使用 default 布局，自动加载导航/样式/页脚
+layout: default
+title: Hua Zou (邹华)
+---
+
+<!-- 主页专属内容（仅保留内容，样式在布局文件中） -->
+<div class="header">
+    <img src="{{ site.author.avatar }}" alt="Avatar" class="avatar">
+    <div class="info">
+        <h1>{{ site.author.name }}</h1>
+        <p><strong>Resume:</strong> <a href="{{ site.author.resume }}">PDF (updated {{ site.footer.update_time | slice: -4 }})</a></p>
+        <p><strong>Interests:</strong> {{ site.author.interests }}</p>
+        <p><strong>Contact:</strong> {{ site.author.email }}</p>
+        <p><strong>Links:</strong>
+            <a href="{{ site.author.links.dblp }}">DBLP</a> ·
+            <a href="{{ site.author.links.google_scholar }}">Google Scholar</a> ·
+            <a href="{{ site.author.links.github }}">Github</a>
+        </p>
+    </div>
+</div>
+
+<div class="intro">
+    <p>
+        I am currently a researcher at Wuhan University, focusing on computer vision and medical image analysis.
+        My research aims to develop efficient and trustworthy AI systems for real-world applications, especially in medical and industrial scenarios.
+    </p>
+    <p style="margin-top: 10px; font-style: italic;">
+        My motto is: Doing Honest Work with My Own Hands.
+    </p>
+</div>
+
+<hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+
+<div class="news">
+    <h2>News</h2>
+    <ul>
+        {% for item in site.news %}
+            <li>[{{ item.date }}] {{ item.content }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="map-placeholder">
+    {{ site.footer.page_views }} (Map placeholder)
+</div>
