@@ -23,9 +23,9 @@ author:
 # 导航栏配置（保留所有项，链接自动生效）
 nav:
   - name: Home
-    link: "/"
+    link: "/index.html"
   - name: Publications
-    link: "/publications.html"
+    link: "/Publications/publications.html"
   - name: Projects
     link: "/experience.html"
   - name: Honors
