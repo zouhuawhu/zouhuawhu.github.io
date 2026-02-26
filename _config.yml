@@ -6,7 +6,7 @@ description: Researcher at Wuhan University, focusing on Computer Vision and Med
 # 个人核心信息（后续可直接改这里）
 author:
   name: Hua Zou (邹华)
-  avatar: https://via.placeholder.com/140  # 替换为你的头像链接
+  avatar: images/IMG_2135c.jpg  # 替换为你的头像链接
   resume: "#"  # 替换为你的简历PDF链接
   interests: Computer Vision, Medical Image Segmentation, Few-shot Detection
   email: zouhua@whu.edu.cn
@@ -21,7 +21,7 @@ nav:
     link: "/"
   - name: Publications
     link: "/publications.html"
-  - name: Experience
+  - name: Projects
     link: "/experience.html"
   - name: Honors
     link: "#honors"
