@@ -27,9 +27,9 @@ nav:
   - name: Publications
     link: "/Publications/publications.html"
   - name: Projects
-    link: "/experience.html"
-  - name: Honors
-    link: "#honors"
+    link: "/Projects/projects.html"
+  - name: Courses
+    link: "#courses"
   - name: Resources
     link: "#resources"
 
