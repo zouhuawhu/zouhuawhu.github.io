@@ -56,3 +56,38 @@ news:
     content: One paper on low light enhancement is accepted to Applied Soft Computing 2022.
   - date: 2022.06.03
     content: One paper on Multi-label Retinal Diseases Recognition is accepted to MICCAI 2022. 
+
+
+# 站点基础配置/作者信息/导航栏/新闻 等原有内容保持不变
+
+# ========== 新增：论文列表配置 ==========
+publications:
+  - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
+    authors: "Hua Zou, XXX, XXX, Zheng Wang"
+    venue: "Expert Systems with Applications"
+    year: 2026
+    links:
+      paper: "https://doi.org/10.1016/j.eswa.2025.129456"
+      code: "#"
+      project: "#"
+    thumb: "assets/pub1.jpg" # 缩略图路径
+
+  - title: "IMedSeg: Towards efficient interactive medical segmentation"
+    authors: "Hua Zou, XXX, XXX*"
+    venue: "Neurocomputing"
+    year: 2026
+    links:
+      paper: "https://doi.org/10.1016/j.neucom.2025.129419"
+      arxiv: "#"
+      github: "#"
+    thumb: "assets/pub2.jpg"
+
+  - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
+    authors: "Hua Zou, XXX, XXX"
+    venue: "Knowledge-Based Systems"
+    year: 2026
+    links:
+      paper: "https://doi.org/10.1016/j.knosys.2025.114091"
+      code: "#"
+      poster: "#"
+    thumb: "assets/pub3.jpg"
