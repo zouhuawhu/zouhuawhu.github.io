@@ -170,6 +170,59 @@
         .pub-links a:hover {
             text-decoration: underline;
         }
+        /* 原有样式（导航栏/主页/论文页）保持不变 */
+
+        /* ========== 新增：项目页面样式 ========== */
+        .project-list {
+          display: flex;
+          flex-direction: column;
+          gap: 16px; /* 项目卡片间距，和论文一致 */
+        }
+        .project-item {
+          padding: 20px;
+          background-color: #f8f9fa;
+          border-radius: 8px;
+          border: 1px solid #eee;
+        }
+        /* 项目标题 */
+        .project-item h3 {
+          font-size: 18px;
+          color: #222;
+          margin: 0 0 10px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #eee;
+        }
+        /* 项目来源 */
+        .project-source {
+          font-size: 14px;
+          color: #666;
+          margin: 0 0 10px;
+          font-weight: 500;
+        }
+        /* 项目简介 */
+        .project-intro {
+          font-size: 15px;
+          line-height: 1.7;
+          color: #333;
+          margin: 0 0 12px;
+        }
+        /* 项目链接 */
+        .project-link a {
+          color: #0066cc;
+          text-decoration: none;
+          font-size: 14px;
+        }
+        .project-link a:hover {
+          text-decoration: underline;
+        }
+        /* 项目缩略图（可选） */
+        .project-thumb {
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+          border-radius: 4px;
+          margin: 0 0 12px;
+        }
         /* 页脚样式 */
         footer {
             text-align: right;
