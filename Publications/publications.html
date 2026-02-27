@@ -7,55 +7,23 @@ title: Publications - Hua Zou
 <!-- 论文页专属内容 -->
 <h1 class="page-title">Publications</h1>
 
+<!-- 2026 年论文 -->
+<h2 style="font-size: 20px; margin: 20px 0 10px;">2026</h2>
 <div class="publication-list">
-    <!-- 论文 1 -->
-    <div class="pub-item">
-        <div class="pub-thumb">
-            <img src="assets/pub1.jpg" alt="Paper thumbnail">
-        </div>
-        <div class="pub-content">
-            <h3>Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images</h3>
-            <p class="pub-authors">Hua Zou, XXX, XXX, Zheng Wang</p>
-            <p class="pub-venue">Expert Systems with Applications, 2026</p>
-            <p class="pub-links">
-                <a href="https://doi.org/10.1016/j.eswa.2025.129456">[Paper]</a>
-                <a href="#">[Code]</a>
-                <a href="#">[Project Page]</a>
-            </p>
-        </div>
-    </div>
+  {% for pub in site.publications %}
+    {% if pub.year == 2026 %}
+      <!-- 渲染 2026 年论文（代码和之前一致） -->
+      <div class="pub-item">...</div>
+    {% endif %}
+  {% endfor %}
+</div>
 
-    <!-- 论文 2 -->
-    <div class="pub-item">
-        <div class="pub-thumb">
-            <img src="assets/pub2.jpg" alt="Paper thumbnail">
-        </div>
-        <div class="pub-content">
-            <h3>IMedSeg: Towards efficient interactive medical segmentation</h3>
-            <p class="pub-authors">Hua Zou, XXX, XXX*</p>
-            <p class="pub-venue">Neurocomputing, 2025</p>
-            <p class="pub-links">
-                <a href="https://doi.org/10.1016/j.neucom.2025.129419">[Paper]</a>
-                <a href="#">[arXiv]</a>
-                <a href="#">[GitHub]</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- 论文 3 -->
-    <div class="pub-item">
-        <div class="pub-thumb">
-            <img src="assets/pub3.jpg" alt="Paper thumbnail">
-        </div>
-        <div class="pub-content">
-            <h3>ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation</h3>
-            <p class="pub-authors">Hua Zou, XXX, XXX</p>
-            <p class="pub-venue">Knowledge-Based Systems, 2025</p>
-            <p class="pub-links">
-                <a href="https://doi.org/10.1016/j.knosys.2025.114091">[Paper]</a>
-                <a href="#">[Code]</a>
-                <a href="#">[Poster]</a>
-            </p>
-        </div>
-    </div>
+<!-- 2025 年论文 -->
+<h2 style="font-size: 20px; margin: 20px 0 10px;">2025</h2>
+<div class="publication-list">
+  {% for pub in site.publications %}
+    {% if pub.year == 2025 %}
+      <div class="pub-item">...</div>
+    {% endif %}
+  {% endfor %}
 </div>
