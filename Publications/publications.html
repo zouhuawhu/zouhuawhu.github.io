@@ -1,29 +1,47 @@
 ---
-# 声明使用 default 布局
 layout: default
 title: Publications - Hua Zou
 ---
 
-<!-- 论文页专属内容 -->
 <h1 class="page-title">Publications</h1>
 
-<!-- 2026 年论文 -->
-<h2 style="font-size: 20px; margin: 20px 0 10px;">2026</h2>
-<div class="publication-list">
-  {% for pub in site.publications %}
-    {% if pub.year == 2026 %}
-      <!-- 渲染 2026 年论文（代码和之前一致） -->
-      <div class="pub-item">...</div>
-    {% endif %}
-  {% endfor %}
-</div>
+{% comment %} 先把所有论文按年份分组，自动提取所有出现过的年份并降序排列 {% endcomment %}
+{% assign years = site.publications | map: "year" | uniq | sort | reverse %}
 
-<!-- 2025 年论文 -->
-<h2 style="font-size: 20px; margin: 20px 0 10px;">2025</h2>
-<div class="publication-list">
-  {% for pub in site.publications %}
-    {% if pub.year == 2025 %}
-      <div class="pub-item">...</div>
-    {% endif %}
-  {% endfor %}
-</div>
+{% for year in years %}
+  <h2 style="font-size: 22px; margin: 30px 0 15px; color: #222;">{{ year }}</h2>
+  <div class="publication-list">
+    {% for pub in site.publications %}
+      {% if pub.year == year %}
+        <div class="pub-item">
+          <div class="pub-thumb">
+            <img src="{{ pub.thumb }}" alt="{{ pub.title }} thumbnail">
+          </div>
+          <div class="pub-content">
+            <h3>{{ pub.title }}</h3>
+            <p class="pub-authors">{{ pub.authors }}</p>
+            <p class="pub-venue">{{ pub.venue }}</p>
+            <p class="pub-links">
+              <a href="{{ pub.links.paper }}">[Paper]</a>
+              {% if pub.links.code %}
+                <a href="{{ pub.links.code }}">[Code]</a>
+              {% endif %}
+              {% if pub.links.arxiv %}
+                <a href="{{ pub.links.arxiv }}">[arXiv]</a>
+              {% endif %}
+              {% if pub.links.github %}
+                <a href="{{ pub.links.github }}">[GitHub]</a>
+              {% endif %}
+              {% if pub.links.project %}
+                <a href="{{ pub.links.project }}">[Project Page]</a>
+              {% endif %}
+              {% if pub.links.poster %}
+                <a href="{{ pub.links.poster }}">[Poster]</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
