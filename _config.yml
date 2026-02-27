@@ -16,7 +16,9 @@ author:
     github: https://github.com/zouhuawhu
   # 个人简介  
   intro:  
-    I am a Professor at the School of Computer Science, Wuhan University. \nMy research focuses on computer vision, multimodal learning, medical image processing, and domain-specific applications of large models. \nI have extensive experience in object detection, industrial defect detection, image segmentation, image enhancement, multimodal medical intelligent diagnosis, and the application of large models in real-world scenarios.
+    I am a Professor at the School of Computer Science, Wuhan University. 
+    My research focuses on computer vision, multimodal learning, medical image processing, and domain-specific applications of large models. 
+    I have extensive experience in object detection, industrial defect detection, image segmentation, image enhancement, multimodal medical intelligent diagnosis, and the application of large models in real-world scenarios.
 
 # 导航栏配置（保留所有项，链接自动生效）
 nav:
