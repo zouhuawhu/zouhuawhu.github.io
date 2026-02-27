@@ -64,7 +64,8 @@ news:
 # ========== 新增：论文列表配置 ==========
 publications:
   - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
-    authors: "Hua Zou, XXX, XXX, Zheng Wang"
+    authors: "Qian Zhou, Huanrou Ding, Chengzhe Li, Hua Zou, Chao Zhang, Ting Zhang"
+    corresponding_author: "Hua Zou (Corresponding Author)"
     venue: "Expert Systems with Applications"
     year: 2026
     links:
