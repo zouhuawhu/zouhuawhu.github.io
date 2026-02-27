@@ -1,0 +1,34 @@
+---
+# 复用 default 布局，自动加载导航栏/样式/页脚
+layout: default
+title: Projects - Hua Zou
+---
+
+<!-- 项目页面标题（和论文页标题样式一致） -->
+<h1 class="page-title">Research Projects</h1>
+
+<!-- 项目列表：通过 Liquid 循环渲染 _config.yml 里的 projects 数组 -->
+<div class="project-list">
+  {% for proj in site.projects %}
+    <div class="project-item">
+      <!-- 项目缩略图（可选，没有则自动不显示） -->
+      {% if proj.thumb %}
+        <img src="{{ proj.thumb }}" alt="{{ proj.name }} thumbnail" class="project-thumb">
+      {% endif %}
+
+      <!-- 项目名称 -->
+      <h3>{{ proj.name }}</h3>
+
+      <!-- 项目来源 -->
+      <p class="project-source"><strong>Project Source:</strong> {{ proj.source }}</p>
+
+      <!-- 项目简介 -->
+      <p class="project-intro">{{ proj.intro }}</p>
+
+      <!-- 项目链接 -->
+      <p class="project-link">
+        <a href="{{ proj.link }}" target="_blank">[Detailed Page]</a>
+      </p>
+    </div>
+  {% endfor %}
+</div>
