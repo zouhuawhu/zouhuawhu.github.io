@@ -89,3 +89,20 @@ publications:
       code: "#"
       poster: "#"
     thumb: "assets/pub3.jpg"
+
+
+# ========== 项目列表配置（英文版本） ==========
+projects:
+  - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
+    source: "Science and Technology Project of Hubei Provincial Company, China National Tobacco Corporation"
+    intro: "Aiming at the problems of strong subjectivity, low digitalization, and low efficiency in the authenticity identification of cigarette label paper in the industry, this project developed an integrated cigarette label paper authenticity identification system (including image acquisition, analysis, storage, and application) based on AI and deep learning technologies. Without unpacking the cigarette packaging boxes, the system realizes intelligent image recognition of cigarette label paper through digital means to preliminarily identify the authenticity of cigarettes. This system provides a digital auxiliary tool for frontline staff (e.g., cigarette quality inspection, monopoly management, marketing) to identify the authenticity of cigarette label paper, and offers reference basis for on-site law enforcement of tobacco monopoly."
+    link: "https://your-project-link.com" # 替换为真实链接
+    thumb: "assets/project1.jpg"
+    year: 2025 # 可选：新增年份字段，方便后续分组
+
+  - name: "Research and Development of a Multimodal Medical Image Intelligent Diagnosis System"
+    source: "Hubei Provincial Natural Science Foundation Project"
+    intro: "To address the problems of low efficiency and high missed diagnosis rate in clinical medical image diagnosis, this project integrates multimodal medical image data (e.g., CT, MRI, ultrasound) and develops a multimodal medical image intelligent diagnosis system based on large models and computer vision technologies. The system can automatically identify lesion areas and evaluate disease severity, assisting clinicians in making rapid diagnostic decisions. It has been piloted in 3 Grade A tertiary hospitals."
+    link: "https://your-project2-link.com"
+    thumb: "assets/project2.jpg"
+    year: 2024
