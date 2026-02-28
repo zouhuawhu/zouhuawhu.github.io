@@ -80,14 +80,14 @@ news:
 # ========== 新增：论文列表配置 ==========
 publications:
   - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
-    authors: "Qian Zhou, Huanrou Ding, Chengzhe Li, <strong>Hua Zou*</strong>, Chao Zhang, Ting Zhang"    
+    authors: "Qian Zhou, Huanrou Ding, Chengzhe Li, <strong>Hua Zou*</strong>, Chao Zhang, Ting Zhang"
     venue: "Expert Systems with Applications"
     year: 2026
     links:
       paper: "https://doi.org/10.1016/j.eswa.2025.129456"
       code: "#"
       project: "#"
-    thumb: "https://via.placeholder.com/120x90?text=Pub1" # 120x90 是论文缩略图尺寸 # 缩略图路径
+    thumb: "https://raw.githubusercontent.com/zouhuawhu/zouhuawhu.github.io/main/assets/pub1.jpg"
 
   - title: "IMedSeg: Towards efficient interactive medical segmentation"
     authors: "Hua Zou, XXX, XXX*"
