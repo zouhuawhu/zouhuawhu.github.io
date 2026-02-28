@@ -106,6 +106,14 @@ publications:
       paper: "https://arxiv.org/pdf/2508.08896"
       code: "https://github.com/Maxwell-Zhao/AffordDex"     
     thumb: "/assets/afforddex.png"
+
+    - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
+    authors: "Lijun Guo, Qian Zhou, Zidi Shi, <strong>Hua Zou*</strong>, Gang ke"
+    venue: "Knowledge-Based Systems"
+    year: 2025
+    links:
+      paper: "https://doi.org/10.1016/j.knosys.2025.114091"      
+    thumb: "/assets/kbs.png"
   
 
 # ========== 项目列表配置（英文版本） ==========
