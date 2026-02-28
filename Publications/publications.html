@@ -21,15 +21,3 @@ title: Publications - Hua Zou
   </div>
 </div>
 
-<!-- 再渲染_config.yml里的论文（备用验证） -->
-{% if site.publications[0] %}
-  <div class="pub-item" style="margin-top:20px;">
-    <div class="pub-thumb">
-      <img src="{{ site.publications[0].thumb | absolute_url }}" alt="Config Image">
-    </div>
-    <div class="pub-content">
-      <h3>{{ site.publications[0].title }}</h3>
-      <p class="pub-authors">{{ site.publications[0].authors | raw }}</p>
-    </div>
-  </div>
-{% endif %}
