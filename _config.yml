@@ -88,22 +88,7 @@ publications:
       code: "#"
       project: "#"
     thumb: "https://raw.githubusercontent.com/zouhuawhu/zouhuawhu.github.io/main/assets/pub1.jpg"
-
-  - title: "IMedSeg: Towards efficient interactive medical segmentation"
-    authors: "Hua Zou, XXX, XXX*"
-    venue: "Neurocomputing"
-    year: 2026
-    links:
-      paper: "https://doi.org/10.1016/j.neucom.2025.129419"      
-    thumb: "assets/pub2.jpg"
-
-  - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
-    authors: "Hua Zou, XXX, XXX"
-    venue: "Knowledge-Based Systems"
-    year: 2026
-    links:
-      paper: "https://doi.org/10.1016/j.knosys.2025.114091"    
-    thumb: "assets/pub3.jpg"
+  
 
 
 # ========== 项目列表配置（英文版本） ==========
