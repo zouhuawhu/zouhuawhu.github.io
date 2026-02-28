@@ -102,9 +102,7 @@ publications:
     venue: "Knowledge-Based Systems"
     year: 2026
     links:
-      paper: "https://doi.org/10.1016/j.knosys.2025.114091"
-      code: "#"
-      poster: "#"
+      paper: "https://doi.org/10.1016/j.knosys.2025.114091"    
     thumb: "assets/pub3.jpg"
 
 
