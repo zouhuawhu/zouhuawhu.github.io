@@ -5,44 +5,31 @@ title: Publications - Hua Zou
 
 <h1 class="page-title">Publications</h1>
 
-{% comment %} 先把所有论文按年份分组，自动提取所有出现过的年份并降序排列 {% endcomment %}
-{% assign years = site.publications | map: "year" | uniq | sort | reverse %}
-
-{% for year in years %}
-  <h2 style="font-size: 22px; margin: 30px 0 15px; color: #222;">{{ year }}</h2>
-  <div class="publication-list">
-    {% for pub in site.publications %}
-      {% if pub.year == year %}
-        <div class="pub-item">
-          <div class="pub-thumb">
-            <!-- 修复：去掉多余的大括号，仅保留两层 {{ }} -->
-            <img src="{{ pub.thumb }}" alt="{{ pub.title }} thumbnail">
-          </div>
-          <div class="pub-content">
-            <h3>{{ pub.title }}</h3>
-            <p class="pub-authors">{{ pub.authors }}</p>
-            <p class="pub-venue">{{ pub.venue }}</p>
-            <p class="pub-links">
-              <a href="{{ pub.links.paper }}">[Paper]</a>
-              {% if pub.links.code %}
-                <a href="{{ pub.links.code }}">[Code]</a>
-              {% endif %}
-              {% if pub.links.arxiv %}
-                <a href="{{ pub.links.arxiv }}">[arXiv]</a>
-              {% endif %}
-              {% if pub.links.github %}
-                <a href="{{ pub.links.github }}">[GitHub]</a>
-              {% endif %}
-              {% if pub.links.project %}
-                <a href="{{ pub.links.project }}">[Project Page]</a>
-              {% endif %}
-              {% if pub.links.poster %}
-                <a href="{{ pub.links.poster }}">[Poster]</a>
-              {% endif %}
-            </p>
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+<!-- 极简测试：只渲染第一篇论文，排除分组逻辑干扰 -->
+<div class="publication-list">
+  <div class="pub-item">
+    <div class="pub-thumb">
+      <!-- 先直接写死图片URL测试，排除_config.yml路径问题 -->
+      <img src="https://via.placeholder.com/120x90?text=Test" alt="Test Image">
+    </div>
+    <div class="pub-content">
+      <h3>Test Publication Title</h3>
+      <p class="pub-authors">Hua Zou*, Test Author</p>
+      <p class="pub-venue">Test Venue, 2026</p>
+      <p class="pub-links"><a href="#">[Paper]</a></p>
+    </div>
   </div>
-{% endfor %}
+</div>
+
+<!-- 再渲染_config.yml里的论文（备用验证） -->
+{% if site.publications[0] %}
+  <div class="pub-item" style="margin-top:20px;">
+    <div class="pub-thumb">
+      <img src="{{ site.publications[0].thumb | absolute_url }}" alt="Config Image">
+    </div>
+    <div class="pub-content">
+      <h3>{{ site.publications[0].title }}</h3>
+      <p class="pub-authors">{{ site.publications[0].authors | raw }}</p>
+    </div>
+  </div>
+{% endif %}
