@@ -84,8 +84,7 @@ publications:
     venue: "IEEE Robotics and Automation Letters"
     year: 2026
     links:
-      paper: "https://arxiv.org/pdf/2510.10637"
-      code: "https://github.com/Maxwell-Zhao/AffordDex"     
+      paper: "https://arxiv.org/pdf/2510.10637"      
     thumb: "/assets/ral2026.png"
   
   - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
@@ -93,9 +92,7 @@ publications:
     venue: "Expert Systems with Applications"
     year: 2025
     links:
-      paper: "https://doi.org/10.1016/j.eswa.2025.129456"
-      code: "#"
-      project: "#"
+      paper: "https://doi.org/10.1016/j.eswa.2025.129456"     
     thumb: "/assets/counterfeit.jpg"
 
   - title: "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors"
