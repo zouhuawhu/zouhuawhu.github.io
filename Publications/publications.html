@@ -1,41 +1,39 @@
 ---
-# 复用全局布局，保证导航栏/样式/页脚统一
 layout: default
 title: Publications - Hua Zou
 ---
 
-<!-- 页面标题，保持和整体风格一致 -->
 <h1 class="page-title">Publications</h1>
 
-{% comment %} 自动提取所有论文年份，按从新到旧排序（无需手动写年份） {% endcomment %}
-{% assign years = site.publications | map: "year" | uniq | sort | reverse %}
+{% comment %} 兼容数字/字符串年份：统一转为字符串后去重、排序 {% endcomment %}
+{% assign all_years = site.publications | map: "year" | uniq %}
+{% assign sorted_years = "" | split: "" %}
+{% for y in all_years %}
+  {% assign y_str = y | to_s %}  <!-- 统一转为字符串 -->
+  {% assign sorted_years = sorted_years | push: y_str %}
+{% endfor %}
+{% assign sorted_years = sorted_years | sort | reverse %}  <!-- 降序排序 -->
 
-{% comment %} 按年份分组渲染论文 {% endcomment %}
-{% for year in years %}
+{% for year in sorted_years %}
   <h2 style="font-size: 22px; margin: 30px 0 15px; color: #222;">{{ year }}</h2>
   <div class="publication-list">
-    {% comment %} 渲染当前年份的所有论文 {% endcomment %}
     {% for pub in site.publications %}
-      {% if pub.year == year %}
+      {% assign pub_year = pub.year | to_s %}  <!-- 论文年份也转为字符串 -->
+      {% if pub_year == year %}  <!-- 字符串匹配，兼容所有格式 -->
         <div class="pub-item">
-          <!-- 论文缩略图：absolute_url 适配Publications文件夹路径，解析根目录相对路径 -->
           <div class="pub-thumb">
             <img src="{{ pub.thumb | absolute_url }}" alt="{{ pub.title }} thumbnail">
           </div>
-          <!-- 论文核心信息 -->
           <div class="pub-content">
             <h3>{{ pub.title }}</h3>
             <p class="pub-authors">{{ pub.authors | raw }}</p>
-            
-            <!-- 新结构：期刊 + 链接在同一行 -->
             <div class="pub-meta">
               <span class="pub-venue">{{ pub.venue }}</span>
               <span class="pub-links">
-                {% if pub.links.paper %}<a href="{{ pub.links.paper }}" target="_blank">[PDF]</a>{% endif %}
-                {% if pub.links.supp %}<a href="{{ pub.links.supp }}" target="_blank">[SUPP]</a>{% endif %}
-                {% if pub.links.code %}<a href="{{ pub.links.code }}" target="_blank">[Code]</a>{% endif %}
-                {% if pub.links.project %}<a href="{{ pub.links.project }}" target="_blank">[Project Page]</a>{% endif %}
-                {% if pub.links.demo %}<a href="{{ pub.links.demo }}" target="_blank">[Demo]</a>{% endif %}
+                {% if pub.links.paper %}<a href="{{ pub.links.paper | absolute_url }}" target="_blank">[PDF]</a>{% endif %}
+                {% if pub.links.code %}<a href="{{ pub.links.code | absolute_url }}" target="_blank">[Code]</a>{% endif %}
+                {% if pub.links.arxiv %}<a href="{{ pub.links.arxiv | absolute_url }}" target="_blank">[arXiv]</a>{% endif %}
+                {% if pub.links.project %}<a href="{{ pub.links.project | absolute_url }}" target="_blank">[Project Page]</a>{% endif %}
               </span>
             </div>
           </div>
