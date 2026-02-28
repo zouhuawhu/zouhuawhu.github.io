@@ -156,19 +156,31 @@
             color: #444;
             margin: 0 0 4px;
         }
-        .pub-venue {
-            font-size: 14px;
-            color: #666;
-            margin: 0 0 8px;
+        /* 元信息容器：让期刊和链接在一行 */
+        .pub-meta {
+          display: flex;
+          flex-wrap: wrap; /* 小屏幕自动换行，避免溢出 */
+          align-items: center;
+          gap: 12px; /* 期刊和链接之间的间距 */
+          margin: 8px 0;
+          font-size: 14px;
+          color: #666;
         }
+        
+        /* 期刊信息样式 */
+        .pub-venue {
+          color: #666;
+          white-space: nowrap; /* 期刊名不换行 */
+        }
+        
+        /* 链接样式 */
         .pub-links a {
-            color: #0066cc;
-            text-decoration: none;
-            margin-right: 8px;
-            font-size: 14px;
+          color: #0066cc;
+          text-decoration: none;
+          margin-right: 8px;
         }
         .pub-links a:hover {
-            text-decoration: underline;
+          text-decoration: underline;
         }
         /* 原有样式（导航栏/主页/论文页）保持不变 */
 
