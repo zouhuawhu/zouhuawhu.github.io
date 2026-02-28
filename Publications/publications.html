@@ -4,10 +4,10 @@ layout: default
 title: Publications - Hua Zou
 ---
 
-<!-- 页面标题，和整体风格一致 -->
+<!-- 页面标题，保持和整体风格一致 -->
 <h1 class="page-title">Publications</h1>
 
-{% comment %} 核心逻辑：自动提取所有论文年份，按从新到旧排序 {% endcomment %}
+{% comment %} 自动提取所有论文年份，按从新到旧排序（无需手动写年份） {% endcomment %}
 {% assign years = site.publications | map: "year" | uniq | sort | reverse %}
 
 {% comment %} 按年份分组渲染论文 {% endcomment %}
@@ -18,34 +18,34 @@ title: Publications - Hua Zou
     {% for pub in site.publications %}
       {% if pub.year == year %}
         <div class="pub-item">
-          <!-- 论文缩略图：加 absolute_url 确保路径正确 -->
+          <!-- 论文缩略图：absolute_url 适配Publications文件夹路径，解析根目录相对路径 -->
           <div class="pub-thumb">
             <img src="{{ pub.thumb | absolute_url }}" alt="{{ pub.title }} thumbnail">
           </div>
           <!-- 论文核心信息 -->
           <div class="pub-content">
             <h3>{{ pub.title }}</h3>
-            <!-- 作者：加 raw 确保 <strong> 加粗标签生效 -->
+            <!-- 作者：raw 确保<strong>加粗/星号正常显示 -->
             <p class="pub-authors">{{ pub.authors | raw }}</p>
             <!-- 期刊/会议信息 -->
             <p class="pub-venue">{{ pub.venue }}</p>
-            <!-- 论文链接：按需渲染，有则显示无则不显示 -->
+            <!-- 论文链接：按需渲染，新标签页打开不跳转出主页 -->
             <p class="pub-links">
-              <a href="{{ pub.links.paper }}" target="_blank">[Paper]</a>
+              <a href="{{ pub.links.paper | absolute_url }}" target="_blank">[Paper]</a>
               {% if pub.links.code %}
-                <a href="{{ pub.links.code }}" target="_blank">[Code]</a>
+                <a href="{{ pub.links.code | absolute_url }}" target="_blank">[Code]</a>
               {% endif %}
               {% if pub.links.arxiv %}
-                <a href="{{ pub.links.arxiv }}" target="_blank">[arXiv]</a>
+                <a href="{{ pub.links.arxiv | absolute_url }}" target="_blank">[arXiv]</a>
               {% endif %}
               {% if pub.links.github %}
-                <a href="{{ pub.links.github }}" target="_blank">[GitHub]</a>
+                <a href="{{ pub.links.github | absolute_url }}" target="_blank">[GitHub]</a>
               {% endif %}
               {% if pub.links.project %}
-                <a href="{{ pub.links.project }}" target="_blank">[Project Page]</a>
+                <a href="{{ pub.links.project | absolute_url }}" target="_blank">[Project Page]</a>
               {% endif %}
               {% if pub.links.poster %}
-                <a href="{{ pub.links.poster }}" target="_blank">[Poster]</a>
+                <a href="{{ pub.links.poster | absolute_url }}" target="_blank">[Poster]</a>
               {% endif %}
             </p>
           </div>
