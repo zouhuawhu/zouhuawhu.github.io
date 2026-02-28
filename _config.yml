@@ -112,6 +112,13 @@ publications:
       paper: "https://doi.org/10.1016/j.knosys.2025.114091"      
     thumb: "/assets/kbs2025.png"
 
+  - title: "Anatomy-Aware Adaptation of Pre-trained Models for Medical Difference Visual Question Answering"
+    authors: "Qian Zhou, Yuhan Gao, <strong>Hua Zou*</strong>, Fei Luo*, Xiwen Bai"
+    venue: "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2025"
+    year: 2025
+    links:
+      paper: "https://ieeexplore.ieee.org/abstract/document/11356508"      
+    thumb: "/assets/bibm2025_1.png"
   
 
 # ========== 项目列表配置（英文版本） ==========
