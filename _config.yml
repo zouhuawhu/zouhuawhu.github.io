@@ -119,6 +119,14 @@ publications:
     links:
       paper: "https://ieeexplore.ieee.org/abstract/document/11356508"      
     thumb: "/assets/bibm2025_01.jpg"
+
+  - title: "MSFP-Net: Multi-Scale Fusion of SAM-Derived Priors for Medical Image Segmentation"
+    authors: "Yaxin Hu, Qian Zhou, Hua Zou*, Fei Luo*, Yuxuan Yang"
+    venue: "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2025"
+    year: 2025
+    links:
+      paper: "https://ieeexplore.ieee.org/abstract/document/11356508"      
+    thumb: "/assets/bibm2025_02.jpg"
   
 
 # ========== 项目列表配置（英文版本） ==========
