@@ -90,7 +90,7 @@ publications:
   - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
     authors: "Qian Zhou, Huanrou Ding, Chengzhe Li, <strong>Hua Zou*</strong>, Chao Zhang, Ting Zhang"
     venue: "Expert Systems with Applications"
-    year: 2025
+    year: 2026
     links:
       paper: "https://doi.org/10.1016/j.eswa.2025.129456"     
     thumb: "/assets/counterfeit.jpg"
@@ -107,7 +107,7 @@ publications:
   - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
     authors: "Lijun Guo, Qian Zhou, Zidi Shi, <strong>Hua Zou*</strong>, Gang ke"
     venue: "Knowledge-Based Systems"
-    year: 2024
+    year: 2025
     links:
       paper: "https://doi.org/10.1016/j.knosys.2025.114091"      
     thumb: "/assets/kbs2025.png"
