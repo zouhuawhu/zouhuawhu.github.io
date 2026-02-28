@@ -88,8 +88,7 @@ publications:
       code: "#"
       project: "#"
     thumb: "/assets/Counterfeit.jpg"
-  
-publications:
+
   - title: "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors"
     authors: "Haoyu Zhao, Linghao Zhuang, Xingyue Zhao, Cheng Zeng, Haoran Xu, Yuming Jiang, Jun Cen, Kexiang Wang, Jiayan Guo, Siteng Huang*, Xin Li, Deli Zhao, <strong>Hua Zou*</strong>"
     venue: "AAAI"
