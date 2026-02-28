@@ -94,9 +94,7 @@ publications:
     venue: "Neurocomputing"
     year: 2026
     links:
-      paper: "https://doi.org/10.1016/j.neucom.2025.129419"
-      arxiv: "#"
-      github: "#"
+      paper: "https://doi.org/10.1016/j.neucom.2025.129419"      
     thumb: "assets/pub2.jpg"
 
   - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
