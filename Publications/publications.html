@@ -25,29 +25,19 @@ title: Publications - Hua Zou
           <!-- 论文核心信息 -->
           <div class="pub-content">
             <h3>{{ pub.title }}</h3>
-            <!-- 作者：raw 确保<strong>加粗/星号正常显示 -->
             <p class="pub-authors">{{ pub.authors | raw }}</p>
-            <!-- 期刊/会议信息 -->
-            <p class="pub-venue">{{ pub.venue }}</p>
-            <!-- 论文链接：按需渲染，新标签页打开不跳转出主页 -->
-            <p class="pub-links">
-              <a href="{{ pub.links.paper | absolute_url }}" target="_blank">[Paper]</a>
-              {% if pub.links.code %}
-                <a href="{{ pub.links.code | absolute_url }}" target="_blank">[Code]</a>
-              {% endif %}
-              {% if pub.links.arxiv %}
-                <a href="{{ pub.links.arxiv | absolute_url }}" target="_blank">[arXiv]</a>
-              {% endif %}
-              {% if pub.links.github %}
-                <a href="{{ pub.links.github | absolute_url }}" target="_blank">[GitHub]</a>
-              {% endif %}
-              {% if pub.links.project %}
-                <a href="{{ pub.links.project | absolute_url }}" target="_blank">[Project Page]</a>
-              {% endif %}
-              {% if pub.links.poster %}
-                <a href="{{ pub.links.poster | absolute_url }}" target="_blank">[Poster]</a>
-              {% endif %}
-            </p>
+            
+            <!-- 新结构：期刊 + 链接在同一行 -->
+            <div class="pub-meta">
+              <span class="pub-venue">{{ pub.venue }}</span>
+              <span class="pub-links">
+                {% if pub.links.paper %}<a href="{{ pub.links.paper }}" target="_blank">[PDF]</a>{% endif %}
+                {% if pub.links.supp %}<a href="{{ pub.links.supp }}" target="_blank">[SUPP]</a>{% endif %}
+                {% if pub.links.code %}<a href="{{ pub.links.code }}" target="_blank">[Code]</a>{% endif %}
+                {% if pub.links.project %}<a href="{{ pub.links.project }}" target="_blank">[Project Page]</a>{% endif %}
+                {% if pub.links.demo %}<a href="{{ pub.links.demo }}" target="_blank">[Demo]</a>{% endif %}
+              </span>
+            </div>
           </div>
         </div>
       {% endif %}
