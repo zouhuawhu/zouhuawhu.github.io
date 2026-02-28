@@ -87,7 +87,7 @@ publications:
       paper: "https://doi.org/10.1016/j.eswa.2025.129456"
       code: "#"
       project: "#"
-    thumb: "/assets/Counterfeit.jpg"
+    thumb: "/assets/counterfeit.jpg"
 
   - title: "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors"
     authors: "Haoyu Zhao, Linghao Zhuang, Xingyue Zhao, Cheng Zeng, Haoran Xu, Yuming Jiang, Jun Cen, Kexiang Wang, Jiayan Guo, Siteng Huang*, Xin Li, Deli Zhao, <strong>Hua Zou*</strong>"
