@@ -15,6 +15,7 @@ title: Publications - Hua Zou
       {% if pub.year == year %}
         <div class="pub-item">
           <div class="pub-thumb">
+            <!-- 修复：去掉多余的大括号，仅保留两层 {{ }} -->
             <img src="{{ pub.thumb }}" alt="{{ pub.title }} thumbnail">
           </div>
           <div class="pub-content">
