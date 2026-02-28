@@ -127,6 +127,14 @@ publications:
     links:
       paper: "https://ieeexplore.ieee.org/abstract/document/11356508"      
     thumb: "/assets/bibm2025_02.jpg"
+
+  - title: "PhysSplat: Efficient Physics Simulation for 3D Scenes via MLLM-Guided Gaussian Splatting"
+    authors: "Haoyu Zhao, Hao Wang, Xingyue Zhao, Hao Fei, Hongqiu Wang, Chengjiang Long*, Hua Zou*"
+    venue: "International Conference on Computer Vision(ICCV), 2025"
+    year: 2025
+    links:
+      paper: "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_PhysSplat_Efficient_Physics_Simulation_for_3D_Scenes_via_MLLM-Guided_Gaussian_ICCV_2025_paper.pdf"      
+    thumb: "/assets/iccv2025.jpg"
   
 
 # ========== 项目列表配置（英文版本） ==========
