@@ -1,23 +1,56 @@
 ---
+# 复用全局布局，保证导航栏/样式/页脚统一
 layout: default
 title: Publications - Hua Zou
 ---
 
+<!-- 页面标题，和整体风格一致 -->
 <h1 class="page-title">Publications</h1>
 
-<!-- 极简测试：只渲染第一篇论文，排除分组逻辑干扰 -->
-<div class="publication-list">
-  <div class="pub-item">
-    <div class="pub-thumb">
-      <!-- 先直接写死图片URL测试，排除_config.yml路径问题 -->
-      <img src="https://raw.githubusercontent.com/zouhuawhu/zouhuawhu.github.io/main/assets/pub1.jpg" alt="Test Image">
-    </div>
-    <div class="pub-content">
-      <h3>Test Publication Title</h3>
-      <p class="pub-authors">Hua Zou*, Test Author</p>
-      <p class="pub-venue">Test Venue, 2026</p>
-      <p class="pub-links"><a href="#">[Paper]</a></p>
-    </div>
-  </div>
-</div>
+{% comment %} 核心逻辑：自动提取所有论文年份，按从新到旧排序 {% endcomment %}
+{% assign years = site.publications | map: "year" | uniq | sort | reverse %}
 
+{% comment %} 按年份分组渲染论文 {% endcomment %}
+{% for year in years %}
+  <h2 style="font-size: 22px; margin: 30px 0 15px; color: #222;">{{ year }}</h2>
+  <div class="publication-list">
+    {% comment %} 渲染当前年份的所有论文 {% endcomment %}
+    {% for pub in site.publications %}
+      {% if pub.year == year %}
+        <div class="pub-item">
+          <!-- 论文缩略图：加 absolute_url 确保路径正确 -->
+          <div class="pub-thumb">
+            <img src="{{ pub.thumb | absolute_url }}" alt="{{ pub.title }} thumbnail">
+          </div>
+          <!-- 论文核心信息 -->
+          <div class="pub-content">
+            <h3>{{ pub.title }}</h3>
+            <!-- 作者：加 raw 确保 <strong> 加粗标签生效 -->
+            <p class="pub-authors">{{ pub.authors | raw }}</p>
+            <!-- 期刊/会议信息 -->
+            <p class="pub-venue">{{ pub.venue }}</p>
+            <!-- 论文链接：按需渲染，有则显示无则不显示 -->
+            <p class="pub-links">
+              <a href="{{ pub.links.paper }}" target="_blank">[Paper]</a>
+              {% if pub.links.code %}
+                <a href="{{ pub.links.code }}" target="_blank">[Code]</a>
+              {% endif %}
+              {% if pub.links.arxiv %}
+                <a href="{{ pub.links.arxiv }}" target="_blank">[arXiv]</a>
+              {% endif %}
+              {% if pub.links.github %}
+                <a href="{{ pub.links.github }}" target="_blank">[GitHub]</a>
+              {% endif %}
+              {% if pub.links.project %}
+                <a href="{{ pub.links.project }}" target="_blank">[Project Page]</a>
+              {% endif %}
+              {% if pub.links.poster %}
+                <a href="{{ pub.links.poster }}" target="_blank">[Poster]</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
