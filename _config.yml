@@ -89,7 +89,15 @@ publications:
       project: "#"
     thumb: "/assets/pub1.jpg"
   
-
+publications:
+  - title: "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors"
+    authors: "Haoyu Zhao, Linghao Zhuang, Xingyue Zhao, Cheng Zeng, Haoran Xu, Yuming Jiang, Jun Cen, Kexiang Wang, Jiayan Guo, Siteng Huang*, Xin Li, Deli Zhao, <strong>Hua Zou*</strong>"
+    venue: "AAAI"
+    year: 2026
+    links:
+      paper: "https://arxiv.org/pdf/2508.08896"
+      code: "https://github.com/Maxwell-Zhao/AffordDex"     
+    thumb: "/assets/afforddex.png"
 
 # ========== 项目列表配置（英文版本） ==========
 projects:
