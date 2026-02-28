@@ -81,7 +81,7 @@ news:
 publications:
   - title: "High-Fidelity Simulated Data Generation for Real-World Zero-Shot Robotic Manipulation Learning with Gaussian Splatting"
     authors: "Haoyu Zhao, Cheng Zeng, Linghao Zhuang, Yaxi Zhao, Shengke Xue, Hao Wang, Xingyue Zhao, Zhongyu Li, Kehan Li, Siteng Huang*, Mingxiu Chen, Xin Li, Deli Zhao, <strong>Hua Zou*</strong>"
-    venue: "IEEE Robotics and Automation Letters"
+    venue: "IEEE Robotics and Automation Letters,2026"
     year: 2026
     links:
       paper: "https://arxiv.org/pdf/2510.10637"      
@@ -89,7 +89,7 @@ publications:
   
   - title: "Region-aware metric learning for few-shot detection of counterfeit cigarettes from packaging images"
     authors: "Qian Zhou, Huanrou Ding, Chengzhe Li, <strong>Hua Zou*</strong>, Chao Zhang, Ting Zhang"
-    venue: "Expert Systems with Applications"
+    venue: "Expert Systems with Applications, 2026"
     year: 2026
     links:
       paper: "https://doi.org/10.1016/j.eswa.2025.129456"     
@@ -97,7 +97,7 @@ publications:
 
   - title: "Towards Affordance-Aware Robotic Dexterous Grasping with Human-like Priors"
     authors: "Haoyu Zhao, Linghao Zhuang, Xingyue Zhao, Cheng Zeng, Haoran Xu, Yuming Jiang, Jun Cen, Kexiang Wang, Jiayan Guo, Siteng Huang*, Xin Li, Deli Zhao, <strong>Hua Zou*</strong>"
-    venue: "AAAI 2026"
+    venue: "The 40th Annual AAAI Conference on Artificial Intelligence (AAAI), 2026."
     year: 2026
     links:
       paper: "https://arxiv.org/pdf/2508.08896"
@@ -106,7 +106,7 @@ publications:
 
   - title: "ActiveFreq: Integrating Active Learning and Frequency Domain Analysis for Interactive Segmentation"
     authors: "Lijun Guo, Qian Zhou, Zidi Shi, <strong>Hua Zou*</strong>, Gang ke"
-    venue: "Knowledge-Based Systems"
+    venue: "Knowledge-Based Systems,2025"
     year: 2025
     links:
       paper: "https://doi.org/10.1016/j.knosys.2025.114091"      
