@@ -121,7 +121,7 @@ publications:
     thumb: "/assets/bibm2025_01.jpg"
 
   - title: "MSFP-Net: Multi-Scale Fusion of SAM-Derived Priors for Medical Image Segmentation"
-    authors: "Yaxin Hu, Qian Zhou, Hua Zou*, Fei Luo*, Yuxuan Yang"
+    authors: "Yaxin Hu, Qian Zhou, <strong>Hua Zou*</strong>, Fei Luo*, Yuxuan Yang"
     venue: "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2025"
     year: 2025
     links:
@@ -129,7 +129,7 @@ publications:
     thumb: "/assets/bibm2025_02.jpg"
 
   - title: "PhysSplat: Efficient Physics Simulation for 3D Scenes via MLLM-Guided Gaussian Splatting"
-    authors: "Haoyu Zhao, Hao Wang, Xingyue Zhao, Hao Fei, Hongqiu Wang, Chengjiang Long*, Hua Zou*"
+    authors: "Haoyu Zhao, Hao Wang, Xingyue Zhao, Hao Fei, Hongqiu Wang, Chengjiang Long*, <strong>Hua Zou*</strong>"
     venue: "International Conference on Computer Vision(ICCV), 2025"
     year: 2025
     links:
