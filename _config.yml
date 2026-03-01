@@ -135,7 +135,14 @@ publications:
     links:
       paper: "https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_PhysSplat_Efficient_Physics_Simulation_for_3D_Scenes_via_MLLM-Guided_Gaussian_ICCV_2025_paper.pdf"      
     thumb: "/assets/iccv2025.jpg"
-  
+
+  - title: "IMedSeg: Towards Efficient  Interactive Medical Segmentation"
+    authors: "Zidi Shi, Ting Chen, Qian Zhou,<strong>Hua Zou*</strong>, Xuan Xiao"
+    venue: "Neurocomputing, 2025"
+    year: 2025
+    links:
+      paper: "https://doi.org/10.1016/j.neucom.2025.129419"      
+    thumb: "/assets/neuro2025.jpg"
 
 # ========== 项目列表配置（英文版本） ==========
 projects:
