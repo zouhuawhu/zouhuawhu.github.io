@@ -152,7 +152,7 @@ publications:
       paper: "https://ieeexplore.ieee.org/document/10889124"      
     thumb: "/assets/icassp2025.jpg"
 
-    - title: "Refining Intraocular Lens Power Calculation: A Multi-modal Framework Using Cross-Layer Attention and Effective Channel Attention"
+  - title: "Refining Intraocular Lens Power Calculation: A Multi-modal Framework Using Cross-Layer Attention and Effective Channel Attention"
     authors: "Tongyu Yang, Qian Zhou, <strong>Hua Zou*</strong>, Haifeng Jiang, Yong Wang"
     venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2024"
     year: 2024
