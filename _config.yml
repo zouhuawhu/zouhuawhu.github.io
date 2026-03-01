@@ -150,7 +150,7 @@ publications:
     year: 2025
     links:
       paper: "https://ieeexplore.ieee.org/document/10889124"      
-    thumb: "/assets/icassp2025.jpg"
+    thumb: "/assets/icassp2025.png"
 
   - title: "Refining Intraocular Lens Power Calculation: A Multi-modal Framework Using Cross-Layer Attention and Effective Channel Attention"
     authors: "Tongyu Yang, Qian Zhou, <strong>Hua Zou*</strong>, Haifeng Jiang, Yong Wang"
