@@ -144,6 +144,22 @@ publications:
       paper: "https://doi.org/10.1016/j.neucom.2025.129419"      
     thumb: "/assets/neuro2025.jpg"
 
+  - title: "UML: A Unified Multimodal Learning Framework for Cataract Postoperative Visual Acuity Prediction with Uncertain Missing Modalities"
+    authors: "Tongyu Yang, Qian Zhou, <strong>Hua Zou*</strong>, Haifeng Jiang, Yong Wang"
+    venue: "International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025"
+    year: 2025
+    links:
+      paper: "https://ieeexplore.ieee.org/document/10889124"      
+    thumb: "/assets/icassp2025.jpg"
+
+    - title: "Refining Intraocular Lens Power Calculation: A Multi-modal Framework Using Cross-Layer Attention and Effective Channel Attention"
+    authors: "Tongyu Yang, Qian Zhou, <strong>Hua Zou*</strong>, Haifeng Jiang, Yong Wang"
+    venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2024"
+    year: 2024
+    links:
+      paper: " https://doi.org/10.1007/978-3-031-72378-0_70"      
+    thumb: "/assets/miccai2024.png"
+
 # ========== 项目列表配置（英文版本） ==========
 projects:
   - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
