@@ -157,7 +157,7 @@ publications:
     venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2024"
     year: 2024
     links:
-      paper: " https://doi.org/10.1007/978-3-031-72378-0_70"      
+      paper: "https://doi.org/10.1007/978-3-031-72378-0_70"      
     thumb: "/assets/miccai2024.png"
 
 # ========== 项目列表配置（英文版本） ==========
