@@ -184,6 +184,14 @@ publications:
       paper: "https://doi.org/10.1007/978-3-031-43990-2_69"      
     thumb: "/assets/miccai2023.png"
 
+  - title: "RHViT: A Robust Hierarchical Transformer for 3D Multimodal Brain Tumor Segmentation Using Biased Masked Image Modeling Pre-training"
+    authors: "Qian Zhou, <strong>Hua Zou*</strong>, Fei Luo*, Yishi Qiu"
+    venue: "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2023"
+    year: 2023
+    links:
+      paper: "https://doi.org/10.1109/BIBM58861.2023.10385746"      
+    thumb: "/assets/bibm2023.png"
+
 # ========== 项目列表配置（英文版本） ==========
 projects:
   - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
