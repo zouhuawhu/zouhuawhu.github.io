@@ -161,7 +161,7 @@ publications:
     thumb: "/assets/miccai2024.png"
 
   - title: "MFSegDiff: A Multi-Frequency Diffusion Model for Medical Image Segmentations"
-    authors: "Zidi Shi, Hua Zou, Fei Luo, Zhiyu Huo"
+    authors: "Zidi Shi, <strong>Hua Zou*</strong>, Fei Luo*, Zhiyu Huo"
     venue: "2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2024"
     year: 2024
     links:
@@ -169,12 +169,12 @@ publications:
     thumb: "/assets/bibm2024.png"
 
   - title: "Uncertainty-aware incomplete multimodal fusion for few-shot Central Retinal Artery Occlusion classification"
-    authors: "Qian Zhou, Ting Chen, Hua Zou, Xuan Xiao"
+    authors: "Qian Zhou, Ting Chen, <strong>Hua Zou*</strong>, Xuan Xiao*"
     venue: "Information Fusion, 2024"
     year: 2024
     links:
       paper: "https://doi.org/10.1016/j.inffus.2023.102200"      
-    thumb: "/assets/infofusion2024.png"
+    thumb: "/assets/infofusion2024.jpg"
 
 # ========== 项目列表配置（英文版本） ==========
 projects:
