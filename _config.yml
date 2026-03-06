@@ -192,6 +192,14 @@ publications:
       paper: "https://doi.org/10.1109/BIBM58861.2023.10385746"      
     thumb: "/assets/bibm2023.png"
 
+  - title: "SMFF-YOLO: A Scale-Adaptive YOLO Algorithm with Multi-Level Feature Fusion for Object Detection in UAV Scenes"
+    authors: "Yuming Wang, <strong>Hua Zou*</strong>, Ming Yin, Xining Zhang"
+    venue: "Remote Sensing, 2023"
+    year: 2023
+    links:
+      paper: "https://doi.org/10.3390/rs15184580"      
+    thumb: "/assets/remotesensing2023.png"
+
 # ========== 项目列表配置（英文版本） ==========
 projects:
   - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
