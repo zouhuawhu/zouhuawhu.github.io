@@ -181,8 +181,8 @@ publications:
     venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2023"
     year: 2023
     links:
-      paper: "https://doi.org/10.1016/j.inffus.2023.102200"      
-    thumb: "/assets/infofusion2024.jpg"
+      paper: "https://doi.org/10.1007/978-3-031-43990-2_69"      
+    thumb: "/assets/miccai2023.png"
 
 # ========== 项目列表配置（英文版本） ==========
 projects:
