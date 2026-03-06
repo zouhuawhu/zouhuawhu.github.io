@@ -176,6 +176,14 @@ publications:
       paper: "https://doi.org/10.1016/j.inffus.2023.102200"      
     thumb: "/assets/infofusion2024.jpg"
 
+  - title: "Incomplete Multimodal Learning for Visual Acuity Prediction After Cataract Surgery Using Masked Self-Attention"
+    authors: "Qian Zhou, <strong>Hua Zou*</strong>, Haifeng Jiang, Yong Wang"
+    venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2023"
+    year: 2023
+    links:
+      paper: "https://doi.org/10.1016/j.inffus.2023.102200"      
+    thumb: "/assets/infofusion2024.jpg"
+
 # ========== 项目列表配置（英文版本） ==========
 projects:
   - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
