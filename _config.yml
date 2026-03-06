@@ -200,6 +200,14 @@ publications:
       paper: "https://doi.org/10.3390/rs15184580"      
     thumb: "/assets/remotesensing2023.png"
 
+  - title: "Long-Tailed Multi-label Retinal Diseases Recognition via Relational Learning and Knowledge Distillation"
+    authors: "Qian Zhou, <strong>Hua Zou*</strong>, Zhongyuan Wang"
+    venue: "Medical Image Computing and Computer Assisted Intervention(MICCAI), 2022"
+    year: 2022
+    links:
+      paper: "https://doi.org/10.1007/978-3-031-16434-7_68"      
+    thumb: "/assets/miccai2022.png"
+
 # ========== 项目列表配置（英文版本） ==========
 projects:
   - name: "Research on Authenticity Identification Technology of Cigarette Label Paper Based on Deep Learning"
